@@ -129,6 +129,9 @@ class MainActivity : AppCompatActivity() {
             put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
             put(MediaStore.Images.Media.WIDTH, bmp.width)
             put(MediaStore.Images.Media.HEIGHT, bmp.height)
+
+            // relative path will save in specific folder
+//            put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/imageToSave")
         }
 
         return try {
